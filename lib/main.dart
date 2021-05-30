@@ -16,12 +16,16 @@ class MyApp extends StatelessWidget {
             children: [
               Container(
                 width: 200,
-                child: TextField(),
+                child: TextField(decoration: InputDecoration(
+                  hintText: 'User name'
+                  ),),
               ),
 
               Container(
                 width: 200,
-                child: TextField(),
+                child: TextField(decoration: InputDecoration(
+                  hintText: 'Password'
+                  ),),
               ),
 
               ElevatedButton(onPressed: (){}, child: Text("Login"))
